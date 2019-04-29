@@ -4,7 +4,7 @@
 2.SectionCarousel
 3.Section Blog
 4.Section Footer
-
+5.Section Page-title
 */
 
 /*1.Section Navbar*/
@@ -73,15 +73,21 @@ html, body{
 .warper img:hover{
     transform: scale(1.1);
 }
-    
+
+.btn-group-custom button{
+    margin-bottom: 0.5rem;
+    width: 100px;
+
+}
+
 /*4.Section Footer*/
 .decorate-footer{
     background:#3b3b3b ;
-    color: #e6e5e8 ;
+    color:#ffffff;
 }
 
 .decorate-footer a{
-    color: #e6e5e8 ;
+    color:#ffffff;
 }
 
 .decorate-footer h4{
@@ -92,7 +98,7 @@ html, body{
 
 .footer{
     background: #0c020c;
-    color: #e6e5e8;
+    color:#ffffff;
     font-size: 0.8rem;
     height: 90px;
     line-height: 90px;
@@ -111,4 +117,14 @@ html, body{
     background:none!important;
     height:500px;
     width:600px;
+}
+
+/*5.Section Page-title*/
+.page-title{
+    position: relative;
+    display: block;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    color:#ffffff;
+    text-align: left;
 }
