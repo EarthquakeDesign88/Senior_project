@@ -3,9 +3,9 @@
 1.Section Navbar
 2.SectionCarousel
 3.Section Blog
-    Detail room
-4.Section Footer
-5.Section Page-title
+4.Detail room
+5.Section Footer
+6.Section Page-title
 */
 
 /*1.Section Navbar*/
@@ -16,6 +16,14 @@
 html, body{
     height: 100%;
 }
+
+@media (max-width: 480px){
+    .navbar-brand{
+        font-size: 0.8rem;
+        line-height: 2rem;
+    }
+}
+
 
 /*2.SectionCarousel*/
 .carousel,
@@ -95,7 +103,12 @@ html, body{
     box-shadow: 0px 0px 10px #000;
 } 
 
-/*Detail room*/
+.owl-carousel .card-body{
+    height: 150px;
+    overflow: hidden;
+}
+
+/*4.Detail room*/
 @media (max-width: 991px){
     .blog-content{
         padding: 40px 50px;
@@ -109,7 +122,7 @@ html, body{
 }
 
 
-/*4.Section Footer*/
+/*5.Section Footer*/
 .decorate-footer{
     background:#3b3b3b ;
     color:#ffffff;
@@ -148,7 +161,7 @@ html, body{
     width:600px;
 }
 
-/*5.Section Page-title*/
+/*6.Section Page-title*/
 .page-title{
     position: relative;
     display: block;
@@ -158,3 +171,5 @@ html, body{
     text-align: left;
     background: rgba(0, 0, 0, 1);
 }
+
+/*7.Section Page-Detail*/
