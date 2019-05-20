@@ -179,7 +179,48 @@ html, body{
     width: 100%;
     text-align: center;
     font-size: 18px;
-  }
+}
 
+/*button hover*/
 
-/*7.Section Page-Detail*/
+/* button:focus{
+    outline: none;
+}
+
+button:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.5);
+}
+
+button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scale(-150deg);
+}
+
+button:hover{
+    background: #338033;
+    cursor: pointer;
+}
+
+button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+} */
