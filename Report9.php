@@ -56,213 +56,196 @@
     <!--Section ShowDetail-->
     <section>
       <div class="row">
-        <div class="col-md-8">
-          <img src="assets/image/diagram/floor9.jpg" class="img-fluid" width="800" height="600" alt="">
+        <div class="col-md-12">
+            <img src="assets/image/diagram/floor9.jpg"class="img-fluid p-1" width="1300" height="200" alt="">
         </div>
+     
+      </div>         
+    </section>
 
-
-        <div class="col-md-4 pl-5 text-center " style=" height: 220px; overflow: scroll;">
-          <h2> เลือกห้อง </h2> 
-          <input type="button" class="btn btn-primary active dropdown-item p-2 selected"  value = "IF-908A" id = "b908a">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-908B" id = "b908b">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-908C" id = "b908c">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-908D" id = "b908d">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-908E" id = "b908e">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-908F" id = "b908f">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-909A" id = "b909a">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-909B" id = "b909b">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-909C" id = "b909c">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-909D" id = "b909d">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-909E" id = "b909e">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-909F" id = "b909f">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-910A" id = "b910a">   
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-910B" id = "b910b">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-910C" id = "b910c">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-910D" id = "b910d">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-910E" id = "b910e">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-910F" id = "b910f">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-911A" id = "b911a">   
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-911B" id = "b911b">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-911C" id = "b911c">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-911D" id = "b911d">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-911E" id = "b911e">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-911F" id = "b911f">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-912A" id = "b912a">   
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-912B" id = "b912b">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-912C" id = "b912c">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-912D" id = "b912d">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-912E" id = "b912e">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-912F" id = "b912f">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-913A" id = "b913a">   
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-913B" id = "b913b">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-913C" id = "b913c">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-913D" id = "b913d">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-913E" id = "b913e">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-913F" id = "b913f">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-914" id = "b914">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-915A" id = "b915a">   
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-915B" id = "b915b">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-915C" id = "915c">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-915D" id = "b915d">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-915E" id = "b915e">
-          <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-915F" id = "b915f">
-          <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-916" id = "b916">
-
+     
+    <section class="container p-3">
+      <div class="row">
+        <div class="col-12">
+            <h1 class = "border-short-bottom text-center" style="color: #000000 "> รายการแจ้งซ่อม </h1>
         </div>
-      </div>    
+      </div>
+    </section>
+    
+       
 
-    <section>
+    <section class = "pt-5 text-center " style=" height:400px; overflow: scroll;">
+        <table class="table"  >
+          <thead class="thead-dark" >
+            <tr>
+              <th scope="col"> ห้อง </th>
+              <th scope="col"> รายการที่แจ้ง </th>          
+              <th scope="col" > สถานะ </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row"> IF-111</th>
+              <td> ไฟเสีย </td>
+         
+              <td><a href="#" class="badge badge-danger p-2"> ยังไม่ดำเนินการ </a></td>
+            </tr>
+            
+            <tr>
+              <th scope="row"> IF-111 </th>
+              <td> มีน้ำรั่วตามฝ้า </td>
+             
+              <td> <a href="#" class="badge badge-warning p-2"> กำลังดำเนินการอยู่ </a></td>
+            </tr>
+           
+            <tr>
+              <th scope="row"> IF-111 </th>
+              <td> Larry </td>
+             
+              <td><a href="#" class="badge badge-danger p-2"> ยังไม่ได้ดำเนินการ </a></td>
+            </tr>
+
+            <tr>
+              <th scope="row"> IF-111</th>
+              <td> ไฟเสีย </td>
+         
+              <td><a href="#" class="badge badge-warning p-2"> กำลังดำเนินการอยู่ </a></td>
+            </tr>
+
+            <tr>
+              <th scope="row"> IF-111</th>
+              <td> ไฟเสีย </td>
+         
+              <td><a href="#" class="badge badge-danger p-2"> ยังไม่ได้ดำเนินการ </a></td>
+            </tr>
+
+            <tr>
+              <th scope="row"> IF-111</th>
+              <td> ไฟเสีย </td>
+         
+              <td><a href="#" class="badge badge-danger p-2"> ยังไม่ได้ดำเนินการ </a></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>  
+      
+      <div class="row pt-5">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+            <h5 class=""> <B>แจ้งอุปกรณ์เสียที่นี่</B> </h5>
+              <form method = "post" action = "php/form.php">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="name"> ชื่อผู้แจ้ง </label>
+                    <input type="text" id="name" name="name" class="form-control"required placeholder="ชื่อของคุณ">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="phone"> เบอร์โทรศัพท์ </label>
+                    <input type="text" id="phone" name="phone" class="form-control" required placeholder="เบอร์โทรศัพท์ของคุณ">
+                  </div>
 
 
-        <section>
-          <div class="row">
-            <div class="col-md-12 pt-3">
-              <a href="#" class="badge badge-danger p-2"> ยังไม่ดำเนินการ </a>
-              <a href="#" class="badge badge-warning p-2"> ดำเนินการอยู่ </a>
-              <a href="#" class="badge badge-success p-2"> ดำเนินการเรียบร้อยแล้ว</a>
-            </div>
-          </div>
-        </section>
 
+                  <div class="form-group col-md-4">
+                    <label for="floor"> ชั้น </label>
+                    <input type="text" id="floor" name="floor" class="form-control" required value = "ชั้น 9">
+                  </div>
 
-        <div class="row pt-5">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-body">
-                <h5 class=""> <B>แจ้งอุปกรณ์เสียที่นี่</B> </h5>
-                <form>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="name"> ชื่อผู้แจ้ง </label>
-                      <input type="text" id="name" class="form-control" placeholder="ชื่อของคุณ">
-                    </div>
+                  <div class="form-group col-md-4 ">
+                    <label  for="area "> ห้อง/บริเวณ </label> <br>
+                    <select name="area" class = "p-2" style=" height: 40px; width: 300px; overflow: scroll;">
+                      <option value="IF-908A"> IF-908A </option>
+                      <option value="IF-909A"> IF-909A </option>
+                      <option value="IF-910A"> IF-910A</option>
+                      <option value="IF-911A"> IF-911A </option>
+                      <option value="IF-912A"> IF-912A </option>
+                      <option value="IF-913A"> IF-913A</option>
+                      <option value="IF-908B"> IF-908B </option>
+                      <option value="IF-909B"> IF-909B </option>
+                      <option value="IF-910B"> IF-910B</option>
+                      <option value="IF-911B"> IF-911B </option>
+                      <option value="IF-912B"> IF-912B </option>
+                      <option value="IF-913B"> IF-913B </option>
+                      <option value="IF-908C"> IF-908C </option>
+                      <option value="IF-909C"> IF-909C </option>
+                      <option value="IF-910C"> IF-910C </option>
+                      <option value="IF-911C"> IF-911C </option>
+                      <option value="IF-912C"> IF-912C </option>
+                      <option value="IF-913C"> IF-913C </option>
+                      <option value="IF-908D"> IF-908D </option>
+                      <option value="IF-909D"> IF-909D </option>
+                      <option value="IF-910D"> IF-910D </option>
+                      <option value="IF-911D"> IF-911D </option>
+                      <option value="IF-912D"> IF-912D </option>
+                      <option value="IF-913D"> IF-913D </option>
+                      <option value="IF-908E"> IF-908E </option>
+                      <option value="IF-909E"> IF-909E </option>
+                      <option value="IF-910E"> IF-910E </option>
+                      <option value="IF-911E"> IF-911E </option>
+                      <option value="IF-912E"> IF-912E </option>
+                      <option value="IF-913E"> IF-913E </option>
+                      <option value="IF-908F"> IF-908F </option>
+                      <option value="IF-909F"> IF-909F </option>
+                      <option value="IF-910F"> IF-910F </option>
+                      <option value="IF-911F"> IF-911F </option>
+                      <option value="IF-912F"> IF-912F </option>
+                      <option value="IF-913F"> IF-913F </option>
+                      <option value="IF-915A"> IF-915A </option>
+                      <option value="IF-915B"> IF-915B </option>
+                      <option value="IF-915C"> IF-915C </option>
+                      <option value="IF-915D"> IF-915D </option>
+                      <option value="IF-915E"> IF-915E </option>
+                      <option value="IF-915F"> IF-913F </option>
+                      <option value="IF-914"> IF-914 </option>
+                      <option value="IF-916"> IF-916 </option>
+                      <option value="ห้องน้ำชาย ชั้น9"> ห้องน้ำชาย ชั้น9  </option>
+                      <option value="ห้องน้ำหญิง ชั้น9"> ห้องน้ำหญิง ชั้น9 </option>
+                      <option value="ห้องน้ำผู้พิการ ชั้น9"> ห้องน้ำผู้พิการ ชั้น9  </option>
+                      <option value="ห้องแม่บ้าน ชั้น9"> ห้องแม่บ้าน ชั้น9  </option>
+                      <option value="บันได ชั้น9"> บันได ชั้น9 </option>
+                      <option value="ห้องสื่อสาร ชั้น9"> ห้องสื่อสาร ชั้น9 </option>
+                      <option value="ลิฟต์1 ชั้น9"> ลิฟต์1 ชั้น9</option>
+                      <option value="ลิฟต์2 ชั้น9"> ลิฟต์2 ชั้น9</option>
+                      <option value="ลิฟต์3 ชั้น9"> ลิฟต์3 ชั้น9</option>
+                      <option value="ลิฟต์ดับเพลิง ชั้น9"> ลิฟต์ดับเพลิง ชั้น9 </option>
+                      <option value="ห้องไฟฟ้า ชั้น9"> ห้องไฟฟ้า ชั้น9 </option>
+                      <option value="ทางหนีไฟ ชั้น9"> ทางหนีไฟ ชั้น9 </option>
+                     
+              
+                    </select>
+                 </div>
 
-                    <div class="form-group col-md-6">
-                      <label for="phone"> เบอร์โทรศัพท์ </label>
-                      <input type="text" id="phone" class="form-control" placeholder="เบอร์โทรศัพท์ของคุณ">
-                    </div>
-
-                    <div class="form-group col-md-4">
-                      <label for="floor"> ชั้น </label>
-                      <input type="text" id="floor9" class="form-control" placeholder="ชั้นที่่ต้องการแจ้ง">
-                    </div>
-
-                    <div class="form-group col-md-4">
-                      <label for="room"> ห้อง </label>
-                      <input type="text" id="room9" class="form-control" placeholder="ห้องที่ต้องการแจ้ง" value="">
-                    </div>
-
-                    <div class="col-md-4">
-                      <form>
+                 <div class="col-md-4">
+                    <form>
                         <div class="form-group">
                           <label for="exampleFormControlFile1"> Upload file image </label>
                           <input type="file" class="form-control-file" id="exampleFormControlFile1">
                         </div>
-                      </form>
-                    </div>
-
-                    <div class="form-group col-12">
-                      <label for="message"> ข้อความของคุณ </label>
-                      <textarea id="message" rows="5" class="form-control"
-                        placeholder="เขียนข้อความของคุณที่ีนี่"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary d-block mx-auto"> ส่งข้อความ </button>
+                    </form>
                   </div>
-                </form>
 
-              </div>
+                  <div class="form-group col-12">
+                    <label for="message"> ข้อความของคุณ </label>
+                    <textarea id="message" name="message"  rows="5" class="form-control" placeholder="เขียนข้อความของคุณที่นี่"></textarea>
+                  </div>
+                  <button type="submit"  id="btn-submit9" name="btn-submit9"  class="btn btn-primary d-block mx-auto"> ส่งข้อความ </button>
+                </div>
+              </form>
+
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
 
       <!--Section Footer-->
-      <footer class="decorate-footer mt-5 p-5 text-center text-md-left">
-        <div class="row">
-          <div class="col-md-4">
-            <a class="navbar-brand" href="#">
-              <img src="assets/image/logo.png" width="35" height="35" alt=""> Informatics Repair center
-            </a>
-            <p>
-              <i class="fa fa-phone-square"></i> :Tel 038 103 060 <br>
-              <i class="fa fa-envelope-o"></i> :Email informatics@buu.ac.th <br>
-            </p>
-            <a href="https://www.facebook.com/InformaticsBuu/" target="_blank">
-              <i class="fa fa-facebook-square fa-2x"></i>
-            </a>
-
-            <a href="https://www.youtube.com/channel/UCI0YkQlBZS5vqDtgIW3Mo9w" target="_blank">
-              <i class="fa fa-youtube fa-2x"></i>
-            </a>
-
-            <a href="https://www.informatics.buu.ac.th/2018/" targer="_blank">
-              <i class="fa fa-university fa-2x"></i>
-            </a>
-
-            <a href="">
-              <i class="fa fa-line"></i>
-            </a>
-          </div>
-          <div class="col-md-3">
-            <h4> Menu </h4>
-            <ul class="navbar-nav">
-              <li class="nav-item ">
-                <a class="nav-link" href="1-Homepage.php"> Home <span class="sr-only">(current)</span></a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="About.php"> About </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="Blog.php"> Blog </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="Repair.php"> Repair </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="Help.php"> Help </a>
-              </li>
-
-              <li class="nav-item active">
-                <a class="nav-link" href="Contact.php"> Contact </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-5">
-            <h4> Maps </h4>
-            <iframe width="100%" height="300" id="gmap_canvas"
-              src="https://maps.google.com/maps?q=informatics%20burapha&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-          </div>
-          <style>
-            .mapouter {
-              text-align: right;
-              height: 300px;
-              width: 100%;
-            }
-
-            .gmap_canvas {
-              overflow: hidden;
-              background: none !important;
-              height: 300px;
-              width: 100%;
-            }
-          </style>
-        </div>
-        </div>
-      </footer>
-
-      <footer class="footer">
-        <span> COPYRIGHT&copy; 2019 <a href="https://www.informatics.buu.ac.th/2018/" target="_blank"> InformaticsBuu
-          </a>
-          ALL Right Reserved
-        </span>
-      </footer>
+        <?php include_once('include/footer.php')?>
 
       <script src="node_modules/jquery/dist/jquery.min.js"></script>
       <script type="text/javascript" src="js/jquery.js"></script>

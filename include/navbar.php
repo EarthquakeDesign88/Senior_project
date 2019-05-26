@@ -21,7 +21,8 @@
                     <a class="nav-link" href="About.php"> About </a>
                 </li>
 
-                <li class="nav-item <?php echo $file_name=='Blog' ? 'active':'' ?>">
+                <?php $arr = array("Blog", "ClassRoom", "ComputerRoom", "Library", "MeetingRoom", "StudyRoom", "TeachingRoom"); ?>
+                <li class="nav-item <?php echo in_array($file_name, $arr) ? 'active':'' ?>">
                     <a class="nav-link" href="Blog.php"> Blog </a>
                 </li>
 

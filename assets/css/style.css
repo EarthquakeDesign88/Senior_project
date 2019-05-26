@@ -132,6 +132,11 @@ html, body{
     color:#ffffff;
 }
 
+.decorate-footer li.active > a{
+    color:#fff
+}
+
+
 .decorate-footer h4{
     color: #2631d9 ;
     border-bottom: 1px solid ;

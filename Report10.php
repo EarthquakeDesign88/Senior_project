@@ -48,66 +48,136 @@
       
       <!--Section ShowDetail-->
       <section>
-        <div class="row">
-          <div class="col-md-8">
-              <img src="assets/image/diagram/floor10.jpg"class="img-fluid" width="800" height="600" alt="">
-          </div>
-  
-            <div class="col-md-4 pl-5 text-center " style=" height: 220px; overflow: scroll;">
-              <h2> เลือกห้อง </h2> 
-              <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-1008" id = "b1008">
-              <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-1009" id = "b1009">
-              <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-1010" id = "b1010">
-              <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-1011" id = "b1011">
-              <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-10M32" id = "b10m32">
-              <input type="button" class="btn btn-secondary active dropdown-item p-2"  value = "IF-10M56" id = "b10m56"> 
-              <input type="button" class="btn btn-primary active dropdown-item p-2"  value = "IF-10M60" id = "b10m60">                 
-            </div> 
+      <div class="row">
+        <div class="col-md-12">
+            <img src="assets/image/diagram/floor10.jpg"class="img-fluid p-1" width="1300" height="200" alt="">
+        </div>
+     
+      </div>         
+    </section>
+
+     
+    <section class="container p-3">
+      <div class="row">
+        <div class="col-12">
+            <h1 class = "border-short-bottom text-center" style="color: #000000 "> รายการแจ้งซ่อม </h1>
+        </div>
+      </div>
+    </section>
+    
+       
+
+    <section class = "pt-5 text-center " style=" height:400px; overflow: scroll;">
+        <table class="table"  >
+          <thead class="thead-dark" >
+            <tr>
+              <th scope="col"> ห้อง </th>
+              <th scope="col"> รายการที่แจ้ง </th>          
+              <th scope="col" > สถานะ </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row"> IF-111</th>
+              <td> ไฟเสีย </td>
+         
+              <td><a href="#" class="badge badge-danger p-2"> ยังไม่ดำเนินการ </a></td>
+            </tr>
             
-        </div>         
-      </section>
-        
+            <tr>
+              <th scope="row"> IF-111 </th>
+              <td> มีน้ำรั่วตามฝ้า </td>
+             
+              <td> <a href="#" class="badge badge-warning p-2"> กำลังดำเนินการอยู่ </a></td>
+            </tr>
+           
+            <tr>
+              <th scope="row"> IF-111 </th>
+              <td> Larry </td>
+             
+              <td><a href="#" class="badge badge-danger p-2"> ยังไม่ได้ดำเนินการ </a></td>
+            </tr>
 
-        <section>
-          <div class="row">
-            <div class="col-md-12 pt-3">
-              <a href="#" class="badge badge-danger p-2"> ยังไม่ดำเนินการ </a>
-              <a href="#" class="badge badge-warning p-2"> ดำเนินการอยู่ </a>
-              <a href="#" class="badge badge-success p-2"> ดำเนินการเรียบร้อยแล้ว</a>
-            </div>
-          </div>
-        </section>  
-        
+            <tr>
+              <th scope="row"> IF-111</th>
+              <td> ไฟเสีย </td>
+         
+              <td><a href="#" class="badge badge-warning p-2"> กำลังดำเนินการอยู่ </a></td>
+            </tr>
 
+            <tr>
+              <th scope="row"> IF-111</th>
+              <td> ไฟเสีย </td>
+         
+              <td><a href="#" class="badge badge-danger p-2"> ยังไม่ได้ดำเนินการ </a></td>
+            </tr>
 
+            <tr>
+              <th scope="row"> IF-111</th>
+              <td> ไฟเสีย </td>
+         
+              <td><a href="#" class="badge badge-danger p-2"> ยังไม่ได้ดำเนินการ </a></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>  
+      
       <div class="row pt-5">
         <div class="col-12">
           <div class="card">
             <div class="card-body">
-              <h5 class=""> <B>แจ้งอุปกรณ์เสียที่นี่</B> </h5>
-              <form>
+            <h5 class=""> <B>แจ้งอุปกรณ์เสียที่นี่</B> </h5>
+              <form method = "post" action = "php/form.php">
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="name"> ชื่อผู้แจ้ง </label>
-                    <input type="text" id="name" class="form-control" placeholder="ชื่อของคุณ">
+                    <input type="text" id="name" name="name" class="form-control"required placeholder="ชื่อของคุณ">
                   </div>
 
                   <div class="form-group col-md-6">
                     <label for="phone"> เบอร์โทรศัพท์ </label>
-                    <input type="text" id="phone" class="form-control" placeholder="เบอร์โทรศัพท์ของคุณ">
+                    <input type="text" id="phone" name="phone" class="form-control" required placeholder="เบอร์โทรศัพท์ของคุณ">
                   </div>
 
-                  <div class="form-group col-md-4">
-                    <label for="email"> ชั้น </label>
-                    <input type="floor" id="floor10" class="form-control" placeholder="ชั้นที่่ต้องการแจ้ง">
-                  </div>
+
 
                   <div class="form-group col-md-4">
-                    <label for="email"> ห้อง </label>
-                    <input type="room" id="room10" class="form-control" placeholder="ห้องที่ต้องการแจ้ง" value = "">
+                    <label for="floor"> ชั้น </label>
+                    <input type="text" id="floor" name="floor" class="form-control" required value = "ชั้น 10">
+                  </div>
+
+                  <div class="form-group col-md-4 ">
+                    <label  for="area "> ห้อง/บริเวณ </label> <br>
+                    <select name="area" class = "p-2" style=" height: 40px; width: 300px; overflow: scroll;">
+                      <option value="IF-1008"> IF-1008 </option>
+                      <option value="IF-1009"> IF-1009 </option>
+                      <option value="IF-1010"> IF-1010 </option>
+                      <option value="IF-1011"> IF-1011 </option>
+                      <option value="IF-10M32"> IF-10M32 </option> 
+                      <option value="IF-10M56"> IF-10M56 </option>
+                      <option value="IF-10M60"> IF-10M60 </option>                    
+                      <option value="ห้องน้ำชาย ชั้น10"> ห้องน้ำชาย ชั้น10  </option>
+                      <option value="ห้องน้ำหญิง ชั้น10"> ห้องน้ำหญิง ชั้น10 </option>
+                      <option value="ห้องน้ำผู้พิการ ชั้น10"> ห้องน้ำผู้พิการ ชั้น10  </option>
+                      <option value="ห้องแม่บ้าน ชั้น10 "> ห้องแม่บ้าน ชั้น10  </option>
+                      <option value="บันได ชั้น10"> บันได ชั้น10 </option>
+                      <option value="ห้องสื่อสาร ชั้น10"> ห้องสื่อสาร ชั้น10 </option>
+                      <option value="ลิฟต์1 ชั้น10"> ลิฟต์1 ชั้น10 </option>
+                      <option value="ลิฟต์2 ชั้น10"> ลิฟต์2 ชั้น10 </option>
+                      <option value="ลิฟต์3 ชั้น10"> ลิฟต์3 ชั้น10 </option>
+                      <option value="ลิฟต์ดับเพลิง ชั้น10"> ลิฟต์ดับเพลิง ชั้น10 </option>
+                      <option value="ห้องไฟฟ้า ชั้น10"> ห้องไฟฟ้า ชั้น10 </option>
+                      <option value="ทางหนีไฟ ชั้น10"> ทางหนีไฟ ชั้น10 </option>
+                 
+                     
+              
+                    </select>
                  </div>
 
-                 <div class="col-md-4">
+                 
+                <div class="col-md-4">
                     <form>
                         <div class="form-group">
                           <label for="exampleFormControlFile1"> Upload file image </label>
@@ -118,9 +188,9 @@
 
                   <div class="form-group col-12">
                     <label for="message"> ข้อความของคุณ </label>
-                    <textarea id="message" rows="5" class="form-control" placeholder="เขียนข้อความของคุณที่ีนี่"></textarea>
+                    <textarea id="message" name="message" rows="5"  class="form-control" placeholder="เขียนข้อความของคุณที่นี่"></textarea>
                   </div>
-                  <button type="submit" class="btn btn-primary d-block mx-auto"> ส่งข้อความ </button>
+                  <button type="submit"  id="btn-submit10" name="btn-submit10" class="btn btn-primary d-block mx-auto"> ส่งข้อความ </button>
                 </div>
               </form>
 
@@ -131,78 +201,10 @@
     </section>
 
 
+
     
     <!--Section Footer-->
-    <footer class="decorate-footer mt-5 p-5 text-center text-md-left">
-    <div class="row">
-        <div class="col-md-4">
-            <a class="navbar-brand" href="#">
-            <img src="assets/image/logo.png" width="35" height="35" alt=""> Informatics Repair center
-            </a> 
-            <p>
-                <i class="fa fa-phone-square"></i> :Tel 038 103 060 <br>
-                <i class="fa fa-envelope-o"></i> :Email informatics@buu.ac.th <br>
-            </p> 
-                <a href="https://www.facebook.com/InformaticsBuu/" target="_blank"> 
-                    <i class="fa fa-facebook-square fa-2x"></i>
-                </a>
-        
-                <a href="https://www.youtube.com/channel/UCI0YkQlBZS5vqDtgIW3Mo9w" target="_blank">
-                    <i class="fa fa-youtube fa-2x"></i>
-                </a>
-
-                <a href="https://www.informatics.buu.ac.th/2018/" targer="_blank">
-                    <i class="fa fa-university fa-2x"></i>
-                </a>
-
-                <a href="">
-                    <i class="fa fa-line"></i>
-                </a>         
-        </div>       
-            <div class="col-md-3">
-                <h4> Menu </h4>
-                <ul class="navbar-nav">
-                <li class="nav-item ">
-                    <a class="nav-link" href="1-Homepage.php"> Home <span class="sr-only">(current)</span></a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="About.php"> About </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="Blog.php"> Blog </a>
-                  </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="Repair.php"> Repair </a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="Help.php"> Help </a>
-                </li>
-  
-                <li class="nav-item active">
-                  <a class="nav-link" href="Contact.php"> Contact </a>
-                </li>
-              </ul>        
-            </div>
-            <div class="col-md-5"> 
-                <h4> Maps </h4>
-                <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=informatics%20burapha&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                  </div>
-                    <style>
-                        .mapouter{text-align:right;height:300px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}
-                    </style>
-                </div>
-            </div>
-        </footer>
-
-    <footer class="footer">
-    <span> COPYRIGHT&copy; 2019 <a href="https://www.informatics.buu.ac.th/2018/"target="_blank"> InformaticsBuu </a>
-        ALL Right Reserved
-    </span>      
-    </footer>
+      <?php include_once('include/footer.php')?>
        
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script type = "text/javascript" src="js/jquery.js"></script>
