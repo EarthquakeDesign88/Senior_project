@@ -45,9 +45,9 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="../dashboard">Home</a></li>
-              <li class="breadcrumb-item"><a href="../admin">Admin Management</a></li>
-              <li class="breadcrumb-item active">Create Data</li>
+              <li class="breadcrumb-item"><a href="../dashboard"> Home </a></li>
+              <li class="breadcrumb-item"><a href="../admin"> Admin Management </a></li>
+              <li class="breadcrumb-item active"> Create Data </li>
             </ol>
           </div>
         </div>
@@ -58,29 +58,29 @@
     <section class="content">
       <div class="card card-primary">
         <div class="card-header">
-        <h3 class="card-title">Create Data</h3>
+        <h3 class="card-title"> Create Data </h3>
         </div>
         <!-- /.card-header -->
         <!-- form start -->
         <form role="form" action="create.php" method="post">
           <div class="card-body">
             <div class="form-group">
-              <label for="firstName">FirstName</label>
+              <label for="firstName"> FirstName </label>
               <input type="text" class="form-control" name ="first_name" id="firstName" placeholder="FirstName" required>
             </div>
             
             <div class="form-group">
-              <label for="lastName">LastName</label>
+              <label for="lastName"> LastName </label>
               <input type="text" class="form-control" name="last_name" id="lastName" placeholder="LastName" required>
             </div>
             
             <div class="form-group">
-              <label for="username">Username</label>
+              <label for="username"> Username </label>
               <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
             </div>
            
             <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password"> Password </label>
                 <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
             </div>
 

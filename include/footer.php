@@ -38,9 +38,9 @@
                     <a class="nav-link" href="About.php"> About </a>
                 </li>
 
-                <?php $arr = array("Blog", "ClassRoom", "ComputerRoom", "Library", "MeetingRoom", "StudyRoom", "TeachingRoom"); ?>
-                <li class="nav-item <?php echo in_array($file_name, $arr) ? 'active':'' ?>">
-                    <a class="nav-link" href="Blog.php"> Blog </a>
+               
+                <li class="nav-item <?php echo $file_name=='Report' ? 'active':'' ?> ">
+                    <a class="nav-link" href="Report.php"> Report </a>
                 </li>
      
                 

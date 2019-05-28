@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.embedgooglemap.net">
     
-    <title> Blog </title>
+    <title> Report </title>
 
 
 </head>

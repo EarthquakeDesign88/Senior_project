@@ -8,9 +8,9 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../../dist/img/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../dist/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../dist/img/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../dist/img/favicons/IF.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../dist/img/favicons/IF.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../dist/img/favicons/IF.png">
   <link rel="manifest" href="../../dist/img/favicons/site.webmanifest">
   <link rel="mask-icon" href="../../dist/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="shortcut icon" href="../../dist/img/favicons/favicon.ico">

@@ -10,7 +10,8 @@
         echo "Connect Error :"; // แสดงผล error message
         exit(); // จบการทำงานทุกอย่าง (โปรแกรมปิดตัวลง)
     }
-    // ถ้าไม่มี error ให้ปล่อยผ่านไม่ต้องแสดงอะไร แต่เอาแค่ค่าไปใช้งาน
-
+    
+    //ตั้งค่า Time zone
+    date_default_timezone_set('Asia/Bangkok');
     
 ?>

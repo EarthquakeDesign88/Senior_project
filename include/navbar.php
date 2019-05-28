@@ -21,14 +21,14 @@
                     <a class="nav-link" href="About.php"> About </a>
                 </li>
 
-                <?php $arr = array("Blog", "ClassRoom", "ComputerRoom", "Library", "MeetingRoom", "StudyRoom", "TeachingRoom"); ?>
-                <li class="nav-item <?php echo in_array($file_name, $arr) ? 'active':'' ?>">
-                    <a class="nav-link" href="Blog.php"> Blog </a>
+               
+                <li class="nav-item <?php echo $file_name=='Report' ? 'active':'' ?>">
+                    <a class="nav-link" href="Report.php"> Report </a>
                 </li>
 
                 <?php $arr = array("Repair", "Report1", "Report2", "Report3", "Report4", "Report5", "Report6", "Report7", "Report8", "Report9", "Report10", "Report11"); ?>
                 <li class="nav-item <?php echo in_array($file_name, $arr) ? 'active':'' ?>">
-                    <a class="nav-link" href="Repair.php"> Repair</a>
+                    <a class="nav-link" href="Repair.php"> Repair </a>
                 </li>
 
 

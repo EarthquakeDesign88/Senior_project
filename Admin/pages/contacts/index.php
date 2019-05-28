@@ -15,9 +15,9 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../../dist/img/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../dist/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../dist/img/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../dist/img/favicons/IF.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../dist/img/favicons/IF.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../dist/img/favicons/IF.png">
   <link rel="manifest" href="../../dist/img/favicons/site.webmanifest">
   <link rel="mask-icon" href="../../dist/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="shortcut icon" href="../../dist/img/favicons/favicon.ico">
@@ -79,7 +79,8 @@
                     <th> Floor </th>
                     <th> Area </th>
                     <th> Message </th>
-                    <th> Datetime </th>
+                    <th> Image </th>
+                    <th> Datetime </th>                  
                     <th> Status </th>
                     <th> Edit </th>
                 </tr>
@@ -100,8 +101,11 @@
                 <td> <?php echo $row['floor']; ?></td>
                 <td> <?php echo $row['area']; ?></td>
                 <td> <?php echo $row['message']; ?></td>
+                <td><img class="img-fluid d-block mx-auto" src="../../../assets/image/image_upload/<?php echo $row['image'];?>" width="250px" alt=""></td>
                 <td> <?php echo $row['datetime_submit']; ?></td>
-                <td><span class="badge badge-danger"> <?php echo $row['status'];?> </span></td>
+                
+                <td><span id="status" class="badge badge-<?php echo $row['status'] == 'no proceed' ? 'danger' : 'warning' ; ?>"> <?php  echo $row['status'];?> </span></td>
+               
                 <td>
                   <a href="edit-status.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning text-white">
                     <i class="fas fa-edit"></i> edit
@@ -163,7 +167,7 @@
     $('#dataTable').DataTable({
       "paging": true,
       "lengthChange": true,
-      "searching": true,
+      "searching": false,
       "ordering": true,
       "info": true,
       "autoWidth": true,
@@ -173,6 +177,15 @@
       ]
     });
   });
+  // $(document).ready(function(){
+  //   console.log($("#status").text())
+  //   if($("#status").text().toString() == "wait proceed"){
+  //     console.log(21111)
+  //     $(".gg").removeClass("badge badge-danger");
+  //     $(".gg").addClass("badge badge-warning");
+  //   }
+  //   .removeattr('disabled')
+  // })
 </script>
 
 </body>

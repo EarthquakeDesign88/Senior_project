@@ -42,16 +42,26 @@
    if(isset($_POST['btn-submit'])){
       
     sendToLine () ;
-    $sql = "INSERT INTO `form` (`name`, `phone`, `floor`, `area`, `message`, `datetime_submit`, `image`) 
+
+       $temp = explode('.', $_FILES['image']['name']);
+       $new_name = round(microtime(true)*9999) . '.' . end($temp);
+       $url_upload = '../assets/image/image_upload/' . $new_name ;
+
+    if(move_uploaded_file($_FILES['image']['tmp_name'], $url_upload)){
+    $sql = "INSERT INTO form (name, phone, floor, area, message, datetime_submit, image) 
     VALUES ('".$_POST['name']."',
     '".$_POST['phone']."', 
     '".$_POST['floor']."', 
     '".$_POST['area']."', 
     '".$_POST['message']."', 
     '".date("Y-m-d H:i:s")."',
-    '".$_POST['image']."');";
+    '".$new_name."');";
 
 $result = $conn->query($sql);
+if($result){
+    header('location:../Repair.php');
+}
+}
            
 } else{
 header('Refresh:0; url=Repair.php');
@@ -61,198 +71,291 @@ header('Refresh:0; url=Repair.php');
 
 //f2
     if(isset($_POST['btn-submit2'])){
-      
         sendToLine () ;
-        $sql = "INSERT INTO `form` (`name`, `phone`, `floor`, `area`, `message`, `datetime_submit`, `image`) 
-        VALUES ('".$_POST['name']."',
-        '".$_POST['phone']."', 
-        '".$_POST['floor']."', 
-        '".$_POST['area']."', 
-        '".$_POST['message']."', 
-        '".date("Y-m-d H:i:s")."',
-        '".$_POST['image']."');";
 
-    $result = $conn->query($sql);
+        $temp = explode('.', $_FILES['image']['name']);
+        $new_name = round(microtime(true)*9999) . '.' . end($temp);
+        $url_upload = '../assets/image/image_upload/' . $new_name ;
+ 
+     if(move_uploaded_file($_FILES['image']['tmp_name'], $url_upload)){
+     $sql = "INSERT INTO form (name, phone, floor, area, message, datetime_submit, image) 
+     VALUES ('".$_POST['name']."',
+     '".$_POST['phone']."', 
+     '".$_POST['floor']."', 
+     '".$_POST['area']."', 
+     '".$_POST['message']."', 
+     '".date("Y-m-d H:i:s")."',
+     '".$new_name."');";
+ 
+ $result = $conn->query($sql);
+ if($result){
+     header('location:../Repair.php');
+ }
+ }
             
-    } else{
-    header('Refresh:0; url=../Repair.php');
-
-    }
+ } else{
+ header('Refresh:0; url=Repair.php');
+ 
+ }
 
 
 
     //f3
     if(isset($_POST['btn-submit3'])){
-      
         sendToLine () ;
-        $sql = "INSERT INTO `form` (`name`, `phone`, `floor`, `area`, `message`, `datetime_submit`, `image`) 
-        VALUES ('".$_POST['name']."',
-        '".$_POST['phone']."', 
-        '".$_POST['floor']."', 
-        '".$_POST['area']."', 
-        '".$_POST['message']."', 
-        '".date("Y-m-d H:i:s")."',
-        '".$_POST['image']."');";
 
-    $result = $conn->query($sql);
-             
-    } else{
-    header('Refresh:0; url=../Repair.php');
-
-    }
+        $temp = explode('.', $_FILES['image']['name']);
+        $new_name = round(microtime(true)*9999) . '.' . end($temp);
+        $url_upload = '../assets/image/image_upload/' . $new_name ;
+ 
+     if(move_uploaded_file($_FILES['image']['tmp_name'], $url_upload)){
+     $sql = "INSERT INTO form (name, phone, floor, area, message, datetime_submit, image) 
+     VALUES ('".$_POST['name']."',
+     '".$_POST['phone']."', 
+     '".$_POST['floor']."', 
+     '".$_POST['area']."', 
+     '".$_POST['message']."', 
+     '".date("Y-m-d H:i:s")."',
+     '".$new_name."');";
+ 
+ $result = $conn->query($sql);
+ if($result){
+     header('location:../Repair.php');
+ }
+ }
+            
+ } else{
+ header('Refresh:0; url=Repair.php');
+ 
+ }
 
 //f4
 if(isset($_POST['btn-submit4'])){
-      
-    sendToLine () ;   
-    $sql = "INSERT INTO `form` (`name`, `phone`, `floor`, `area`, `message`, `datetime_submit`, `image`) 
-    VALUES ('".$_POST['name']."',
-    '".$_POST['phone']."', 
-    '".$_POST['floor']."', 
-    '".$_POST['area']."', 
-    '".$_POST['message']."', 
-    '".date("Y-m-d H:i:s")."',
-    '".$_POST['image']."');";
+    sendToLine () ;
+
+    $temp = explode('.', $_FILES['image']['name']);
+    $new_name = round(microtime(true)*9999) . '.' . end($temp);
+    $url_upload = '../assets/image/image_upload/' . $new_name ;
+
+ if(move_uploaded_file($_FILES['image']['tmp_name'], $url_upload)){
+ $sql = "INSERT INTO form (name, phone, floor, area, message, datetime_submit, image) 
+ VALUES ('".$_POST['name']."',
+ '".$_POST['phone']."', 
+ '".$_POST['floor']."', 
+ '".$_POST['area']."', 
+ '".$_POST['message']."', 
+ '".date("Y-m-d H:i:s")."',
+ '".$new_name."');";
 
 $result = $conn->query($sql);
-         
+if($result){
+ header('location:../Repair.php');
+}
+}
+        
 } else{
-header('Refresh:0; url=../Repair.php');
+header('Refresh:0; url=Repair.php');
 
 }
+
+
 //f5
 if(isset($_POST['btn-submit5'])){
       
-    sendToLine () ;  
-    $sql = "INSERT INTO `form` (`name`, `phone`, `floor`, `area`, `message`, `datetime_submit`, `image`) 
+    sendToLine () ;
+
+       $temp = explode('.', $_FILES['image']['name']);
+       $new_name = round(microtime(true)*9999) . '.' . end($temp);
+       $url_upload = '../assets/image/image_upload/' . $new_name ;
+
+    if(move_uploaded_file($_FILES['image']['tmp_name'], $url_upload)){
+    $sql = "INSERT INTO form (name, phone, floor, area, message, datetime_submit, image) 
     VALUES ('".$_POST['name']."',
     '".$_POST['phone']."', 
     '".$_POST['floor']."', 
     '".$_POST['area']."', 
     '".$_POST['message']."', 
     '".date("Y-m-d H:i:s")."',
-    '".$_POST['image']."');";
+    '".$new_name."');";
 
 $result = $conn->query($sql);
-         
+if($result){
+    header('location:../Repair.php');
+}
+}
+           
 } else{
-header('Refresh:0; url=../Repair.php');
+header('Refresh:0; url=Repair.php');
 
 }
 //f6
 if(isset($_POST['btn-submit6'])){
-      
     sendToLine () ;
-    $sql = "INSERT INTO `form` (`name`, `phone`, `floor`, `area`, `message`, `datetime_submit`, `image`) 
+
+       $temp = explode('.', $_FILES['image']['name']);
+       $new_name = round(microtime(true)*9999) . '.' . end($temp);
+       $url_upload = '../assets/image/image_upload/' . $new_name ;
+
+    if(move_uploaded_file($_FILES['image']['tmp_name'], $url_upload)){
+    $sql = "INSERT INTO form (name, phone, floor, area, message, datetime_submit, image) 
     VALUES ('".$_POST['name']."',
     '".$_POST['phone']."', 
     '".$_POST['floor']."', 
     '".$_POST['area']."', 
     '".$_POST['message']."', 
     '".date("Y-m-d H:i:s")."',
-    '".$_POST['image']."');";
+    '".$new_name."');";
 
 $result = $conn->query($sql);
-         
+if($result){
+    header('location:../Repair.php');
+}
+}
+           
 } else{
-header('Refresh:0; url=../Repair.php');
+header('Refresh:0; url=Repair.php');
 
 }
 //f7
 if(isset($_POST['btn-submit7'])){
-      
-    sendToLine () ; 
-    $sql = "INSERT INTO `form` (`name`, `phone`, `floor`, `area`, `message`, `datetime_submit`, `image`) 
+    sendToLine () ;
+
+       $temp = explode('.', $_FILES['image']['name']);
+       $new_name = round(microtime(true)*9999) . '.' . end($temp);
+       $url_upload = '../assets/image/image_upload/' . $new_name ;
+
+    if(move_uploaded_file($_FILES['image']['tmp_name'], $url_upload)){
+    $sql = "INSERT INTO form (name, phone, floor, area, message, datetime_submit, image) 
     VALUES ('".$_POST['name']."',
     '".$_POST['phone']."', 
     '".$_POST['floor']."', 
     '".$_POST['area']."', 
     '".$_POST['message']."', 
     '".date("Y-m-d H:i:s")."',
-    '".$_POST['image']."');";
+    '".$new_name."');";
 
 $result = $conn->query($sql);
-         
+if($result){
+    header('location:../Repair.php');
+}
+}
+           
 } else{
-header('Refresh:0; url=../Repair.php');
+header('Refresh:0; url=Repair.php');
 
 }
 //f8
 if(isset($_POST['btn-submit8'])){
-      
-    sendToLine () ;  
-    $sql = "INSERT INTO `form` (`name`, `phone`, `floor`, `area`, `message`, `datetime_submit`, `image`) 
+    sendToLine () ;
+
+       $temp = explode('.', $_FILES['image']['name']);
+       $new_name = round(microtime(true)*9999) . '.' . end($temp);
+       $url_upload = '../assets/image/image_upload/' . $new_name ;
+
+    if(move_uploaded_file($_FILES['image']['tmp_name'], $url_upload)){
+    $sql = "INSERT INTO form (name, phone, floor, area, message, datetime_submit, image) 
     VALUES ('".$_POST['name']."',
     '".$_POST['phone']."', 
     '".$_POST['floor']."', 
     '".$_POST['area']."', 
     '".$_POST['message']."', 
     '".date("Y-m-d H:i:s")."',
-    '".$_POST['image']."');";
+    '".$new_name."');";
 
 $result = $conn->query($sql);
-         
+if($result){
+    header('location:../Repair.php');
+}
+}
+           
 } else{
-header('Refresh:0; url=../Repair.php');
+header('Refresh:0; url=Repair.php');
 
 }
 //f9
 if(isset($_POST['btn-submit9'])){
     sendToLine () ;
-        
-    $sql = "INSERT INTO `form` (`name`, `phone`, `floor`, `area`, `message`, `datetime_submit`, `image`) 
+
+       $temp = explode('.', $_FILES['image']['name']);
+       $new_name = round(microtime(true)*9999) . '.' . end($temp);
+       $url_upload = '../assets/image/image_upload/' . $new_name ;
+
+    if(move_uploaded_file($_FILES['image']['tmp_name'], $url_upload)){
+    $sql = "INSERT INTO form (name, phone, floor, area, message, datetime_submit, image) 
     VALUES ('".$_POST['name']."',
     '".$_POST['phone']."', 
     '".$_POST['floor']."', 
     '".$_POST['area']."', 
     '".$_POST['message']."', 
     '".date("Y-m-d H:i:s")."',
-    '".$_POST['image']."');";
+    '".$new_name."');";
 
 $result = $conn->query($sql);
-         
+if($result){
+    header('location:../Repair.php');
+}
+}
+           
 } else{
-header('Refresh:0; url=../Repair.php');
+header('Refresh:0; url=Repair.php');
 
 }
 //f10
 if(isset($_POST['btn-submit10'])){
     sendToLine () ;
-        
-    $sql = "INSERT INTO `form` (`name`, `phone`, `floor`, `area`, `message`, `datetime_submit`, `image`) 
-    VALUES ('".$_POST['name']."',
-    '".$_POST['phone']."', 
-    '".$_POST['floor']."', 
-    '".$_POST['area']."', 
-    '".$_POST['message']."', 
-    '".date("Y-m-d H:i:s")."',
-    '".$_POST['image']."');";
+
+    $temp = explode('.', $_FILES['image']['name']);
+    $new_name = round(microtime(true)*9999) . '.' . end($temp);
+    $url_upload = '../assets/image/image_upload/' . $new_name ;
+
+ if(move_uploaded_file($_FILES['image']['tmp_name'], $url_upload)){
+ $sql = "INSERT INTO form (name, phone, floor, area, message, datetime_submit, image) 
+ VALUES ('".$_POST['name']."',
+ '".$_POST['phone']."', 
+ '".$_POST['floor']."', 
+ '".$_POST['area']."', 
+ '".$_POST['message']."', 
+ '".date("Y-m-d H:i:s")."',
+ '".$new_name."');";
 
 $result = $conn->query($sql);
-         
+if($result){
+ header('location:../Repair.php');
+}
+}
+        
 } else{
-header('Refresh:0; url=../Repair.php');
+header('Refresh:0; url=Repair.php');
 
 }
 //f11
 if(isset($_POST['btn-submit11'])){
       
     sendToLine () ;
-    $sql = "INSERT INTO `form` (`name`, `phone`, `floor`, `area`, `message`, `datetime_submit`, `image`) 
+
+       $temp = explode('.', $_FILES['image']['name']);
+       $new_name = round(microtime(true)*9999) . '.' . end($temp);
+       $url_upload = '../assets/image/image_upload/' . $new_name ;
+
+    if(move_uploaded_file($_FILES['image']['tmp_name'], $url_upload)){
+    $sql = "INSERT INTO form (name, phone, floor, area, message, datetime_submit, image) 
     VALUES ('".$_POST['name']."',
     '".$_POST['phone']."', 
     '".$_POST['floor']."', 
     '".$_POST['area']."', 
     '".$_POST['message']."', 
     '".date("Y-m-d H:i:s")."',
-    '".$_POST['image']."');";
+    '".$new_name."');";
 
 $result = $conn->query($sql);
-         
+if($result){
+    header('location:../Repair.php');
+}
+}
+           
 } else{
-header('Refresh:0; url=../Repair.php');
+header('Refresh:0; url=Repair.php');
 
 }
-
 
 ?>

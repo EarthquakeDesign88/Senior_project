@@ -1,7 +1,8 @@
 <?php 
-$link = $_SERVER['REQUEST_URI'];
-$link_array = explode('/',$link);
-$name = $link_array[count($link_array) - 2];
+$uri = $_SERVER['REQUEST_URI'];
+$array = explode('/', $uri);
+$key = array_search("pages", $array);
+$page = $array[$key + 1];
 ?>
 <nav class="main-header navbar navbar-expand border-bottom navbar-dark bg-info">
     <!-- Left navbar links -->
@@ -15,13 +16,15 @@ $name = $link_array[count($link_array) - 2];
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#">
+          <!-- Show Time -->
+          Last login: <?php echo date_format(new DateTime($_SESSION['last_login']),"j F Y H:i:s")?> 
           <i class="fa fa-th-large"></i>
         </a>
       </li>
     </ul>
 </nav>
   <!-- /.navbar -->
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar sidebar-dark-primary elevation-4 ">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
       <span class="brand-text font-weight-light text-center d-block">Admin Management</span>
@@ -35,7 +38,7 @@ $name = $link_array[count($link_array) - 2];
           <img src="../../dist/img/IF.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block"> User Admin </a>
+          <a href="#" class="d-block"> <?php echo $_SESSION['first_name'].' '. $_SESSION['last_name']?> </a>
         </div>
       </div>
 
@@ -43,25 +46,29 @@ $name = $link_array[count($link_array) - 2];
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
-            <a href="../dashboard" class="nav-link <?php echo $name == 'dashboard' ? 'active': '' ?>">
+            <a href="../dashboard" class="nav-link <?php echo $page == 'dashboard' ? 'active': '' ?>">
               <i class="fas fa-tachometer-alt nav-icon"></i>
               <p> Dashboard </p>
             </a>
           </li>
+          <!-- Check SuperAdmin -->
+          <?php if($_SESSION['status']== 'superadmin'){ ?>
           <li class="nav-item">
-            <a href="../admin" class="nav-link <?php echo $name == 'admin' ? 'active': '' ?>">
+            <a href="../admin" class="nav-link <?php echo $page == 'admin' ? 'active': '' ?>">
               <i class="fas fa-users-cog nav-icon"></i>
               <p> Admin Management </p>
             </a>
           </li>
+<?php }?>
+
           <li class="nav-item">
-            <a href="../articles" class="nav-link <?php echo $name == 'articles' ? 'active': '' ?>">
+            <a href="../articles" class="nav-link <?php echo $page == 'articles' ? 'active': '' ?>">
               <i class="fas fa-chalkboard-teacher nav-icon"></i>
               <p> Articles </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="../contacts" class="nav-link <?php echo $name == 'contacts' ? 'active': '' ?>">
+            <a href="../contacts" class="nav-link <?php echo $page == 'contacts' ? 'active': '' ?>">
               <i class="fas fa-chalkboard-teacher nav-icon"></i>
               <p> Report </p>
             </a>

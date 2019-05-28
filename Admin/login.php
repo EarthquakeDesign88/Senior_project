@@ -1,9 +1,45 @@
 <?php 
   session_start();
+  require_once('../php/connect.php');
   if (isset($_POST['submit'])) {
-    $_SESSION['authen_id'] = 1; 
-    header('Location: pages/dashboard');
-  }
+    
+
+
+    $username = $conn->real_escape_string($_POST['username']) ;
+    $password = $conn->real_escape_string($_POST['password']);
+
+    $sql = "SELECT * FROM `admin` WHERE `username` = '".$username."'";
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc();
+
+    //  echo '<pre>', print_r($row), '</pre>'; 
+    
+     if(!empty($row) && password_verify($password, $row['password'])){
+      $_SESSION['authen_id'] = $row['id'];
+      $_SESSION['first_name'] = $row['first_name'];
+      $_SESSION['last_name'] = $row['last_name'];
+      $_SESSION['status'] = $row['status'];
+      $_SESSION['last_login'] = $row['last_login'];
+     
+      
+      $update_time = "UPDATE `admin` SET `last_login` = '".date("Y-m-d H:i:s")."'  WHERE `id` = '".$row['id']."' ";
+      $result_update = $conn->query($update_time);
+
+      if($result_update){
+        header('Location: pages/dashboard');
+      } else {
+        echo '<script> alert("Error")</script>'; 
+      }
+      
+      // echo '<script> alert("เข้าสู่ระบบสำเร็จ")</script>'; 
+   
+    } else {
+        echo '<script> alert("ชื่อผู้ใช้ และ รหัสผ่านไม่ถูกตอง")</script>'; 
+
+    }
+
+  
+    }
 
 
 ?>
@@ -15,9 +51,9 @@
   <title>Login</title>
   
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="dist/img/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="dist/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="dist/img/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/img/favicons/IF.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/img/favicons/IF.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="dist/img/favicons/IF.png">
   <link rel="manifest" href="dist/img/favicons/site.webmanifest">
   <link rel="mask-icon" href="dist/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="shortcut icon" href="dist/img/favicons/favicon.ico">
@@ -54,13 +90,13 @@
             <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" name ="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required>
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text"> <i class="fas fa-lock"></i></span>
             </div>
-            <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            <input type="password" name ="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" required>
         </div>
 
         <div class="row">

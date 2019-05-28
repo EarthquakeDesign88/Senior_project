@@ -78,6 +78,8 @@
                 <option value="" disabled selected > Select Status </option>              
                 <option value="no proceed"> no proceed </option>
                 <option value="wait proceed"> wait proceed </option>
+                <option value="success proceed"> success proceed </option>
+
               </select>
             </div>
           </div>

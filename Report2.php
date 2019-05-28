@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,7 +130,7 @@
           <div class="card">
             <div class="card-body">
             <h5 class=""> <B>แจ้งอุปกรณ์เสียที่นี่</B> </h5>
-              <form method = "post" action = "php/form.php">
+              <form method = "post" action = "php/form.php" enctype="multipart/form-data">
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="name"> ชื่อผู้แจ้ง </label>
@@ -145,8 +146,9 @@
 
                   <div class="form-group col-md-4">
                     <label for="floor"> ชั้น </label>
-                    <input disable selected type="text " id="floor" name="floor" class="form-control" required value = "ชั้น 2">
+                    <input  readonly type="text " id="floor" name="floor" class="form-control" value = "ชั้น 2">        
                   </div>
+                  
 
                   <div class="form-group col-md-4 ">
                     <label  for="area "> ห้อง/บริเวณ </label> <br>
@@ -190,7 +192,7 @@
                     <form>
                         <div class="form-group">
                           <label for="exampleFormControlFile1"> Upload file image </label>
-                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                          <input type="file" name="image" class="form-control-file" id="exampleFormControlFile1">
                         </div>
                     </form>
                   </div>
