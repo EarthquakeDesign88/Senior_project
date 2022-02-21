@@ -1,7 +1,7 @@
 <?php $file_name = basename($_SERVER['SCRIPT_FILENAME'], ".php")?>
     
     <!--Section Navbar-->
-    <!-- update -->
+    
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-nav">
         <div class = "container">
             <a class="navbar-brand" href="1-Homepage.php">
