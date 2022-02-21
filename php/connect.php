@@ -3,7 +3,12 @@
     error_reporting(0); // เปิด Error ทั้งหมด
     //error_reporting(0); // ปิด error ในกรณีที่เราต้องการแสดง error ของเราเอง
     //เชื่อมต่อ Database
-    $conn = new mysqli('localhost','root','','blog'); //my_project
+    // $conn = new mysqli('localhost','s58160071','s58160071','s58160071'); 
+
+
+
+    
+    $conn = new mysqli('localhost','root','','project'); 
     // ตั้งค่าภาษา ให้รองรับภาษาไทย
     $conn->set_charset('utf8'); 
     if ($conn->connect_errno) {// เช็คว่ามีค่า error code หรือเปล่า
@@ -13,5 +18,6 @@
     
     //ตั้งค่า Time zone
     date_default_timezone_set('Asia/Bangkok');
-    
+   
+
 ?>

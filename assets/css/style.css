@@ -97,7 +97,9 @@ html, body{
     color: #ffffff;
 
 }
-
+.sidebar .sidebar-menu .active .treeview-menu {
+    display: block;
+}
 .blog-content{
     padding: 50px 100px;
     box-shadow: 0px 0px 10px #000;

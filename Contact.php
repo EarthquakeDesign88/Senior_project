@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.embedgooglemap.net">
+    <link rel="icon" type="image/png" sizes="32x32" href="Admin/dist/img/favicons/IF.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Admin/dist/img/favicons/IF.png">
+
+    
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="Admin/dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- DataTables -->
+  <link rel="stylesheet" href="Admin/plugins/datatables/dataTables.bootstrap4.min.css">
+
     
     <title> Contact </title>
 
@@ -30,8 +43,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class = "display-5 font-weight-bold text-center" style="color: #000000;" > ข้อมูลการติดต่อ </h1>
-                    <p class = "lead text-center" style="color: #000000;">  Faculty of Science Burapha University </p>
+                    <h1 class = "display-5 font-weight-bold text-center" style="color: #000000; font-size: 3rem;" > Contact </h1>
+                    <p class = "lead text-center" style="color: #000000;">  Faculty Of Science Burapha University </p>
                 </div>
             </div>
         </div>    
@@ -48,8 +61,8 @@
           <div class="card h-100 text-center">
             <i class="fa fa-address-card-o fa-5x text-danger" aria-hidden="true"></i>
             <div class="card-body">
-              <h3 class="title" style="color: rgba(19, 93, 255, 0.945)" > ที่อยู่ </h3>
-              <p class="card-text"> คณะวิทยาการสารสนเทศ 169 ถนนลงหาดบางแสน ต.แสนสุข อ.เมือง จ.ชลบุรี 20131 </p>
+              <h3 class="title" style="color: rgba(19, 93, 255, 0.945)" > Address </h3>
+              <p class="card-text"> 169 Longhard Bangsaen Rd., Saensook, Muang, Chon Buri 20131, Thailand </p>
             </div>
           </div> 
         </div>
@@ -58,7 +71,7 @@
           <div class="card h-100 text-center">
             <i class="fa fa-phone-square fa-5x text-warning" aria-hidden="true"></i>
             <div class="card-body">
-              <h3 class = "title" style="color: rgba(19, 93, 255, 0.945)" > เบอร์โทรศัพท์ </h3>
+              <h3 class = "title" style="color: rgba(19, 93, 255, 0.945)" > Tel </h3>
               <p class="card-text"> Tel. (+66)38-103-061, (+66)38-103-096 <br>
                 Fax. (+66)38-393- 245 </p>
             </div>
@@ -69,7 +82,7 @@
           <div class="card h-100 text-center">
             <i class="fa fa-envelope-o fa-5x text-success" aria-hidden="true"></i>
             <div class="card-body">
-              <h3 class = "title" style="color: rgba(19, 93, 255, 0.945)" > อีเมลล์ </h3>
+              <h3 class = "title" style="color: rgba(19, 93, 255, 0.945)" > Email </h3>
               <p class="card-text"> informatics@buu.ac.th </p>
             </div>
           </div> 

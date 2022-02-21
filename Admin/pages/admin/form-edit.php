@@ -1,7 +1,12 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 <?php 
   include_once('../authen.php');
-  $id = $_GET['id'];
-  $sql = "SELECT username, first_name, last_name, phone, line_id, status FROM `admin` WHERE `id` = '".$id."' ";
+  $id = $_GET['username_admin'];
+  $sql = "SELECT username_admin, first_name, last_name, phone, line_id, status_admin.admin_detail AS status 
+  FROM admin 
+  JOIN status_admin ON admin.id_status = status_admin.id_status  
+  WHERE `username_admin` = '".$id."' ";
   $result = $conn->query($sql);
   $row = $result->fetch_assoc();
 
@@ -70,11 +75,11 @@
         </div>
         <!-- /.card-header -->
         <!-- form start -->
-        <form role="form" action="update.php" method="post">
+        <form role="form" action="update.php?username_admin=<?php echo $row['username_admin']; ?>" method="post">
           <div class="card-body">
             <div class="form-group">
-              <label for="username">Username</label>
-              <input type="text" disabled class="form-control" name ="username" id="username" placeholder="Username" value="<?php echo $row['username'];?>"required>
+              <label for="username_admin">Username</label>
+              <input readonly type="text" class="form-control" name ="username_admin" id="username_admin" placeholder="username_admin" value="<?php echo $row['username_admin'];?>"required>
             </div>
             
             <div class="form-group">
@@ -100,10 +105,10 @@
             
             <div class="form-group">
               <label>Select Permission</label>
-              <select class="form-control" required name="status">
-                <option value="" disabled selected > Select Permission </option>
-                <option value="admin"> Admin </option>
-                <option value="superadmin"> Super Admin </option>
+              <select class="form-control" name="status">
+                <option value=""  selected > Select Permission </option>
+                <option value="2"> Admin </option>
+                <option value="1"> Super Admin </option>
               </select>
             </div>
           </div>
@@ -113,7 +118,10 @@
 
           <div class="card-footer">
               <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-          </div>
+              <?php if($row['status'] == 'admin') { ?>
+              <button type="delete" name="delete" class="btn btn-danger" > Delete admin </button>
+
+              <?php }?>
         </form>
       </div>    
     </section>

@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-4">
             <a class="navbar-brand" href="#">
-            <img src="assets/image/logo.png" width="35" height="35" alt=""> Informatics Repair center
+            <img src="assets/image/logo.png" width="35" height="35" alt=""> Informatics Repair Report System
             </a> 
             <p>
                 <i class="fa fa-phone-square"></i> :Tel 038 103 060 <br>
@@ -39,8 +39,8 @@
                 </li>
 
                
-                <li class="nav-item <?php echo $file_name=='Report' ? 'active':'' ?> ">
-                    <a class="nav-link" href="Report.php"> Report </a>
+                <li class="nav-item <?php echo $file_name=='Statistics' ? 'active':'' ?> ">
+                    <a class="nav-link" href="Statistics.php"> Statistics </a>
                 </li>
      
                 
@@ -60,7 +60,7 @@
             </div>
         <div class="col-md-5"> 
             <h4> Maps </h4>
-            <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=informatics%20burapha&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <iframe width="100%" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=informatics%20burapha&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             </div>
             <style>
             .mapouter{text-align:right;height:300px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}

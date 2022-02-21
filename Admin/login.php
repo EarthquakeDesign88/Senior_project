@@ -5,28 +5,33 @@
     
 
 
-    $username = $conn->real_escape_string($_POST['username']) ;
+    $username = $conn->real_escape_string($_POST['username_admin']) ;
     $password = $conn->real_escape_string($_POST['password']);
 
-    $sql = "SELECT * FROM `admin` WHERE `username` = '".$username."'";
+    $sql = "SELECT first_name, last_name, username_admin, password , status_admin.admin_detail AS id_status, phone, line_id, last_login, updated_at
+    FROM admin
+    LEFT JOIN status_admin ON admin.id_status = status_admin.id_status WHERE `username_admin` = '".$username."'";
+
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
 
     //  echo '<pre>', print_r($row), '</pre>'; 
     
      if(!empty($row) && password_verify($password, $row['password'])){
-      $_SESSION['authen_id'] = $row['id'];
+      // $_SESSION['authen_id'] = $row['id'];
+      $_SESSION['username_admin'] = $row['username_admin'];
       $_SESSION['first_name'] = $row['first_name'];
       $_SESSION['last_name'] = $row['last_name'];
-      $_SESSION['status'] = $row['status'];
+      $_SESSION['id_status'] = $row['id_status'];
       $_SESSION['last_login'] = $row['last_login'];
+
      
       
-      $update_time = "UPDATE `admin` SET `last_login` = '".date("Y-m-d H:i:s")."'  WHERE `id` = '".$row['id']."' ";
+      $update_time = "UPDATE admin SET `last_login` = '".date("Y-m-d H:i:s")."'  WHERE `username_admin` = '".$row['username_admin']."' ";
       $result_update = $conn->query($update_time);
 
       if($result_update){
-        header('Location: pages/dashboard');
+        header('Location: pages/report');
       } else {
         echo '<script> alert("Error")</script>'; 
       }
@@ -90,7 +95,7 @@
             <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
-            <input type="text" name ="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required>
+            <input type="text" name ="username_admin" class="form-control" placeholder="username" aria-label="Username" aria-describedby="basic-addon1" required>
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">

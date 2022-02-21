@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.embedgooglemap.net">
+    <link rel="apple-touch-icon" sizes="180x180" href="Admin/dist/img/favicons/IF.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Admin/dist/img/favicons/IF.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Admin/dist/img/favicons/IF.png">
+
     
-    <title> Informatics Repair center </title>
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="Admin/dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- DataTables -->
+  <link rel="stylesheet" href="Admin/plugins/datatables/dataTables.bootstrap4.min.css">
+    
+    
+    <title> The Repair Reporting System Of The Informatics Building </title>
 
 
 </head>
@@ -36,8 +50,8 @@
           <div class="carousel-item active">
             <div class = "carousel-img" style = "background-image: url('http://www.architects110.com/wp-content/uploads/2017/04/5426_View-3.jpg')">
               <div class ="carousel-caption">
-                <h1 class = "display-5 font-weight-bold"> Informatics Repair Center </h1>
-                <p class = "lead"> ระบบแจ้งอุปกรณ์เสียภายในคณะวิทยาการสารสนเทศ </p>
+                <!-- <h1 class = "display-5 font-weight-bold " > The Repair Reporting System of the Informatics Building  </h1> -->
+                <!-- <p class = "lead"> ระบบรายงานการซ่อมแซมของอาคารสารสนเทศ </p> -->
               </div>
                 <div class = "backsceen"> </div>
             </div>
@@ -46,8 +60,8 @@
           <div class="carousel-item">
             <div class = "carousel-img" style = "background-image: url('http://www.architects110.com/wp-content/uploads/2017/04/5426_View-2-1.jpg')">
               <div class ="carousel-caption">
-                <h1  class = "display-5 font-weight-bold"> Informatics Repair Center </h1>
-                <p  class = "lead"> ระบบแจ้งอุปกรณ์เสียภายในคณะวิทยาการสารสนเทศ </p>
+                <!-- <h1  class = "display-5 font-weight-bold"> The Repair Reporting System of the Informatics Building </h1> -->
+                <!-- <p  class = "lead"> ระบบรายงานการซ่อมแซมของอาคารสารสนเทศ </p> -->
               </div>
                 <div class = "backsceen"> </div>
             </div>
@@ -56,8 +70,8 @@
           <div class="carousel-item">
             <div class = "carousel-img" style = "background-image: url('https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1060&q=80')">
               <div class ="carousel-caption">
-                <h1  class = "display-5 font-weight-bold"> Informatics Repair Center </h1>
-                <p  class = "lead"> ระบบแจ้งอุปกรณ์เสียภายในคณะวิทยาการสารสนเทศ </p>
+                <!-- <h1  class = "display-5 font-weight-bold"> The Repair Reporting System of the Informatics Building </h1> -->
+                <!-- <p  class = "lead"> ระบบรายงานการซ่อมแซมของอาคารสารสนเทศ </p> -->
               </div>  
                 <div class = "backsceen"> </div>
             </div>           
@@ -77,23 +91,22 @@
       <!--Section Jumbotron-->
       <section class="jumbotron jumbotron-fluid text-center">
         <div class = "container">
-          <h1 class = "border-short-bottom"> ระบบแจ้งอุปกรณ์,สิ่งก่อสร้างชำรุด </h1>
-          <p class = "lead" > คณะวิทยาการสารสนเทศ  </p>
+          <h1 class = "border-short-bottom"> The Repair Reporting System Of The Informatics Building </h1>
+          <p class = "lead"  style="font-size: 1.5rem" > Faculty Of Informatics </p>
         </div>
       </section>
       
       <!--Section Blog-->
       <section class = "container">
-        <h1 class = "border-short-bottom text-center" style="color:blue "> แจ้งเสียที่นี่ </h1>
+        <h1 class = "border-short-bottom text-center" style="color:blue "> Report Here </h1>
         <div class="row">
             <section class = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
               <div class="card h-100">
                 <a href="Report1.php" class="warper">  
-                  <img src="assets/image/Floor/F1.jpg" class="card-img-top h-100 ">
+                  <img src="assets/image/Floor/1.JPG" class="card-img-top h-100 ">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title"> Floor1 </h5>
-                  <p class="card-text"> 1 rooms </p>
+                  <h5 class="card-title"> 1<sup>st</sup> Floor </h5>                
                 </div>
                       
                 <div class="card-footer">
@@ -105,11 +118,10 @@
             <section class = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
               <div class="card h-100 ">
                 <a href="Report2.php" class="warper">
-                  <img src="assets/image/Floor/F2.jpg" class="card-img-top h-100" alt="...">
+                  <img src="assets/image/Floor/2.JPG" class="card-img-top h-100" alt="...">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title"> Floor2 </h5>
-                  <p class="card-text"> 11 rooms </p>
+                  <h5 class="card-title"> 2<sup>nd</sup> Floor </h5>
                 </div>
 
                 <div class="card-footer">
@@ -121,11 +133,10 @@
             <section class = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
               <div class="card h-100 ">
                 <a href="Report3.php" class="warper">
-                  <img src="assets/image/Floor/F3.jpg" class="card-img-top h-100" alt="...">
+                  <img src="assets/image/Floor/3.JPG" class="card-img-top h-100" alt="...">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title"> Floor3 </h5>
-                  <p class="card-text"> 5 rooms </p>
+                  <h5 class="card-title"> 3<sup>rd</sup> Floor </h5>
                 </div>
 
                 <div class="card-footer">
@@ -137,11 +148,10 @@
            <section class = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
               <div class="card h-100 "> 
                 <a href="Report4.php" class="warper">
-                  <img src="assets/image/Floor/F4.jpg" class="card-img-top h-100" alt="...">
+                  <img src="assets/image/Floor/4.JPG" class="card-img-top h-100" alt="...">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title"> Floor4 </h5>
-                  <p class="card-text"> 5 rooms </p>
+                  <h5 class="card-title"> 4<sup>th</sup> Floor </h5>
                 </div>
 
                 <div class="card-footer">
@@ -152,11 +162,10 @@
             <section class = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
               <div class="card h-100 ">
                 <a href="Report5.php" class="warper">
-                  <img src="assets/image/Floor/F5.jpg" class="card-img-top h-100" alt="...">
+                  <img src="assets/image/Floor/5.JPG" class="card-img-top h-100" alt="...">
                 </a>
                 <div class="card-body">
-                    <h5 class="card-title"> Floor5 </h5>
-                    <p class="card-text"> 6 rooms </p>
+                    <h5 class="card-title"> 5<sup>th</sup> Floor </h5>
                 </div>
 
                 <div class="card-footer">
@@ -168,11 +177,10 @@
             <section class = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
               <div class="card h-100">
                 <a href="Report6.php" class="warper">
-                  <img src="assets/image/Floor/F6.jpg" class="card-img-top h-100" alt="...">
+                  <img src="assets/image/Floor/6.JPG" class="card-img-top h-100" alt="...">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title"> Floor6 </h5>
-                  <p class="card-text"> 5 rooms </p>
+                  <h5 class="card-title"> 6<sup>th</sup> Floor </h5>
                 </div>
 
                 <div class="card-footer">
@@ -184,11 +192,10 @@
             <section class = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
               <div class="card h-100 ">
                 <a href="Report7.php" class="warper">
-                  <img src="assets/image/Floor/F7.jpg" class="card-img-top h-100" alt="...">
+                  <img src="assets/image/Floor/7.JPG" class="card-img-top h-100" alt="...">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title"> Floor7 </h5>
-                  <p class="card-text"> 5 rooms </p>
+                  <h5 class="card-title"> 7<sup>th</sup> Floor </h5>
                 </div>
 
                 <div class="card-footer">
@@ -200,11 +207,10 @@
             <section class = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4 ">
               <div class="card h-100"> 
                 <a href="Report8.php" class="warper">
-                  <img src="assets/image/Floor/F8.jpg" class="card-img-top h-100" alt="...">
+                  <img src="assets/image/Floor/8.JPG" class="card-img-top h-100" alt="...">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title"> Floor8 </h5>
-                <p class="card-text"> 8 rooms </p>      
+                  <h5 class="card-title"> 8<sup>th</sup> Floor </h5>   
                 </div>
 
                 <div class="card-footer"> 
@@ -216,11 +222,10 @@
           <section class = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4 ">
               <div class="card h-100"> 
                 <a href="Report9.php" class="warper">
-                  <img src="assets/image/Floor/F9.jpg" class="card-img-top h-100" alt="...">
+                  <img src="assets/image/Floor/9.JPG" class="card-img-top h-100" alt="...">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title"> Floor9 </h5>
-                <p class="card-text"> 44 rooms </p>      
+                  <h5 class="card-title"> 9<sup>th</sup> Floor </h5>     
                 </div>
 
                 <div class="card-footer"> 
@@ -232,11 +237,10 @@
           <section class = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4 ">
               <div class="card h-100"> 
                 <a href="Report10.php" class="warper">
-                  <img src="assets/image/Floor/F10.jpg" class="card-img-top h-100" alt="...">
+                  <img src="assets/image/Floor/10.JPG" class="card-img-top h-100" alt="...">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title"> Floor10 </h5>
-                <p class="card-text"> 7 rooms </p>      
+                  <h5 class="card-title"> 10<sup>th</sup> Floor </h5>    
                 </div>
 
                 <div class="card-footer"> 
@@ -248,11 +252,10 @@
           <section class = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4 ">
               <div class="card h-100"> 
                 <a href="Report11.php" class="warper">
-                  <img src="assets/image/Floor/F11.jpg" class="card-img-top h-100" alt="...">
+                  <img src="assets/image/Floor/11.JPG" class="card-img-top h-100" alt="...">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title"> Floor11 </h5>
-                <p class="card-text"> 2 rooms </p>      
+                  <h5 class="card-title"> 11<sup>th</sup> Floor </h5>  
                 </div>
 
                 <div class="card-footer"> 

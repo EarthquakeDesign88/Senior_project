@@ -1,7 +1,12 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 <?php 
   include_once('../authen.php');
 
-  $sql = "SELECT * FROM `admin`";
+  $sql = "SELECT username_admin,first_name,last_name,phone,line_id,status_admin.admin_detail 
+  AS status 
+  FROM admin 
+  JOIN status_admin ON admin.id_status = status_admin.id_status";
   $result = $conn->query($sql);
 
 
@@ -52,8 +57,7 @@
             <h1>Admin Management</h1>
           </div>
           <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="../dashboard">Dashboard</a></li>
+            <ol class="breadcrumb float-sm-right">           
               <li class="breadcrumb-item active">Admin Management</li>
             </ol>
           </div>
@@ -68,13 +72,13 @@
       <div class="card">
         <div class="card-header">
           <h3 class="card-title d-inline-block">Admin List</h3>
-          <a href="form-create.php" class="btn btn-primary float-right ">Add Admin +</a href="">
+          <a href="form-create.php" class="btn btn-secondary float-right ">Add Admin +</a href="">
         </div>
         <!-- /.card-header -->
-        <div class="card-body">
-          <table id="dataTable" class="table table-bordered table-striped">
-            <thead>
-            <tr>
+        <div class="card-body ">
+          <table id="dataTable" class="table  table-bordered table-striped ">
+            <thead class = "thead-dark">
+            <tr class="text-center">
               <th> No. </th>
               <th> Username </th>
               <th> FirstName </th>
@@ -83,7 +87,6 @@
               <th> Line id </th>
               <th> Permission </th>
               <th> Edit </th>
-              <th> Delete </th>
             </tr>
             </thead>
             <tbody>
@@ -93,28 +96,23 @@
               while( $row = $result->fetch_assoc() ){
                 $num++;  
             ?>
-              <tr>
+              <tr class="text-center">
                 <td> <?php echo $num; ?></td>
-                <td> <?php echo $row['username']; ?></td>
+                <td> <?php echo $row['username_admin']; ?></td>
                 <td> <?php echo $row['first_name']; ?></td>
                 <td> <?php echo $row['last_name']; ?></td>
                 <td> <?php echo $row['phone']; ?></td>
                 <td> <?php echo $row['line_id']; ?></td>
-                <td><span class="badge badge-primary"> <?php echo $row['status'];?> </span></td>
+                <td><span class="badge p-2 badge-secondary"> <?php echo $row['status'];?> </span></td>
                 
+                <?php if($username_admin != 1) { ?>   
                 <td>
-                  <a href="form-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning text-white">
+                  <a href="form-edit.php?username_admin=<?php echo $row['username_admin']; ?>" class="btn btn-sm btn-primary text-white">
                     <i class="fas fa-edit"></i> edit
                   </a> 
                 </td>
-                <td>
-                  <!-- ไม่ลบadmin คนแรก -->
-                  <?php if($row['id'] !=1) { ?>
-                  <a href="#" onclick="deleteItem(<?php echo $row['id']; ?>);" class="btn btn-sm btn-danger">
-                    <i class="fas fa-trash-alt"></i> Delete
-                  </a>
-                  <?php } ?>
-                </td>
+                <?php } ?>
+             
               </tr>
             <?php } ?>
             
@@ -155,7 +153,7 @@
 <script>
   $(function () {
     $('#dataTable').DataTable({
-      "paging": true,
+      "paging": false,
       "lengthChange": true,
       "searching": true,
       "ordering": true,
@@ -166,7 +164,7 @@
 
   function deleteItem (id) { 
     if( confirm('คุณต้องการลบข้อมูลนี้ใช่หรือไม่?') == true){
-      window.location=`delete.php?id=${id}`;
+      window.location=`delete.php?username=${id}`;
       // window.location='delete.php?id='+id;
     }
   };

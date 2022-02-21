@@ -45,7 +45,6 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="../dashboard"> Home </a></li>
               <li class="breadcrumb-item"><a href="../admin"> Admin Management </a></li>
               <li class="breadcrumb-item active"> Create Data </li>
             </ol>
@@ -76,7 +75,7 @@
             
             <div class="form-group">
               <label for="username"> Username </label>
-              <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
+              <input type="text" class="form-control" name="username_admin" id="username" placeholder="Username" required>
             </div>
            
             <div class="form-group">
@@ -99,14 +98,16 @@
               <label>Select Permission</label>
               <select class="form-control" required name="status">
                 <option value="" disabled selected > Select Permission </option>
-                <option value="admin"> Admin </option>
-                <option value="superadmin"> Super Admin </option>
+                <option value="2"> Admin </option>
+                <option value="1"> Super Admin </option>
               </select>
             </div>
           </div>
           <div class="card-footer">
               <button type="submit" name="submit" class="btn btn-primary">Submit</button>
           </div>
+
+          
         </form>
       </div>    
     </section>

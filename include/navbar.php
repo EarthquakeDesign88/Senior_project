@@ -5,7 +5,7 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-nav">
         <div class = "container">
             <a class="navbar-brand" href="1-Homepage.php">
-                <img src="assets/image/logo.png" width="35" height="35" alt=""> Informatics Repair center
+                <img src="assets/image/logo.png" width="35" height="35" alt=""> Informatics Repair Report System
             </a> 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarKey" aria-controls="navbarKey" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,8 +22,9 @@
                 </li>
 
                
-                <li class="nav-item <?php echo $file_name=='Report' ? 'active':'' ?>">
-                    <a class="nav-link" href="Report.php"> Report </a>
+                <?php $arr = array("Statistics", "day", "month", "year"); ?>
+                <li class="nav-item <?php echo in_array($file_name, $arr) ? 'active':'' ?>">
+                    <a class="nav-link" href="Statistics.php"> Statistics </a>
                 </li>
 
                 <?php $arr = array("Repair", "Report1", "Report2", "Report3", "Report4", "Report5", "Report6", "Report7", "Report8", "Report9", "Report10", "Report11"); ?>
